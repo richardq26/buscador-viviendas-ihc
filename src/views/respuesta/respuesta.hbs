@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Inmobiliaria Lindavista</h1>
+    <hr>
+    <h4>Búsqueda de vivienda</h4>
+
+    {{#each enviar}}
+
+    <p>Vivienda de tipo '{{tipo}}', con {{tamaño}} metros cuadrados, con direccion {{direccion}} en la zona de {{zona}}, precio: S/.{{precio}}
+        Extras de esta vivienda: {{extras}} </p>
+
+    {{/each}}
+</div>

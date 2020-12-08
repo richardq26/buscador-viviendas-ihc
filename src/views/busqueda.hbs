@@ -1,0 +1,232 @@
+
+<div class="container">
+    <h1>Inmobiliaria Lindavista</h1>
+    <hr>
+    <h4>Búsqueda de vivienda</h4>
+    <p>Ayudanos a encontrar la vivienda que mejor se ajusten a tus necesidades</p>
+    
+    <span class="Subtitulo">Datos Personales</span>
+    <div class="contenedorPersonal">
+
+
+
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Ingresa tu nombre">
+            </div>
+        </div>
+
+
+        <section class="form-group ">
+            <div class="row">
+                <label class="col-form-label col-sm-2 pt-0">Edad</label>
+                <div class="col-sm-10 ">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Edad" id="edad1" value="option1">
+                        <label class="form-check-label-sm" for="edad1">
+                            Menos de 20
+                        </label class="col-form-label">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Edad" id="edad2" value="option2">
+                        <label class="form-check-label-sm" for="edad2">
+                            de 21 a 30
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Edad" id="edad3" value="option3">
+                        <label class="form-check-label-sm" for="edad3">
+                            de 31 a 40
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Edad" id="edad4" value="option3">
+                        <label class="form-check-label-sm" for="edad4">
+                            mas de 40
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="form-group row">
+            <div class="col-sm-2">Profesión</div>
+            <div class="col-sm-4">
+                <select id="inputState" class="form-control">
+                    <option selected>Seleccionar profesión</option>
+                    <option>Funcionario</option>
+                    <option>Profesión liberal</option>
+                    <option>Empresario</option>
+                    <option>Artista</option>
+                    <option>Deportistas</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <span class="Subtitulo">Datos de la vivienda buscada</span>
+    <div class="contenedorVivienda">
+
+
+        <form method="POST" action="/buscarvivienda">
+
+            <!-- NDORMITORIOS -->
+            <section class="form-group ">
+                <div class="row">
+                    <label class="col-form-label col-sm-2 pt-0">Dormitorios</label>
+                    <div class="col-sm-10 ">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ndormitorios" id="dormitorio1" value="1">
+                            <label class="form-check-label-sm" for="dormitorio1">
+                                1
+                            </label class="col-form-label">
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ndormitorios" id="dormitorio2" value="2">
+                            <label class="form-check-label-sm" for="dormitorio2">
+                                2
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ndormitorios" id="dormitorio3" value="3">
+                            <label class="form-check-label-sm" for="dormitorio3">
+                                3
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ndormitorios" id="dormitorio4" value="4">
+                            <label class="form-check-label-sm" for="dormitorio4">
+                                4
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ndormitorios" id="dormitorio5" value="5">
+                            <label class="form-check-label-sm" for="dormitorio5">
+                                5
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--TIPO -->
+            <div class="form-group row">
+                <div class="col-sm-2">Tipo</div>
+                <div class="col-sm-4">
+                    <select name="tipo" id="inputState" class="form-control">
+                        <option selected> Seleccionar Tipo</option>
+                        <option value="Piso">Piso</option>
+                        <option value="Adosado">Adosado</option>
+                        <option value="Chalet">Chalet</option>
+                        <option value="Casa">Casa</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- PRECIO -->
+            <section class="form-group ">
+                <div class="row">
+                    <label class="col-form-label col-sm-2 pt-0">Precio</label>
+                    <div class="col-sm-10 ">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="precio" id="precio1" value="000100">
+                            <label class="form-check-label-sm" for="precio1">
+                                menos de 500000
+                            </label class="col-form-label">
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="precio" id="precio2" value="100200">
+                            <label class="form-check-label-sm" for="precio2">
+                                entre 100000 y 200000
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="precio" id="precio3" value="200300">
+                            <label class="form-check-label-sm" for="precio3">
+                                entre 200000 y 300000
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="precio" id="precio4" value="300999">
+                            <label class="form-check-label-sm" for="precio4">
+                                mayor a 300000
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ZONA -->
+            <div class="form-group row">
+                <div class="col-sm-2">Zona</div>
+                <div class="col-sm-4">
+                    <select id="inputState" class="form-control" name="zona">
+                        <option selected>Seleccionar zona</option>
+                        <option value="Centro">Centro</option>
+                        <option value="Nervion">Nervión</option>
+                        <option value="Macarena">Macarena</option>
+                        <option value="Aljarafe">Aljarafe</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <!-- EXTRAS -->
+            <section class="form-group ">
+                <div class="row">
+                    <label class="col-form-label col-sm-2 pt-0">Extras</label>
+                    <div class="col-sm-10 ">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="extra" id="extra1" value="Piscina">
+                            <label class="form-check-label-sm" for="extra1">
+                                Piscina
+                            </label class="col-form-label">
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="extra1" id="extra2" value="Jardin">
+                            <label class="form-check-label-sm" for="extra2">
+                                Jardin
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="extra2" id="extra3" value="Garaje">
+                            <label class="form-check-label-sm" for="extra3">
+                                Garaje
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="extra3" id="extra4" value="Sauna">
+                            <label class="form-check-label-sm" for="extra4">
+                                Sauna
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-group row">
+
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Deseo recibir información acerca de
+                            futuras
+                            promociones de inmobiliaria Lindavista
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-12 text-center">
+                    <button type="submit" class="btn btn-outline btn-success">Enviar Formulario</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>

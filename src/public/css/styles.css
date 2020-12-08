@@ -1,0 +1,41 @@
+body {
+    background: #f2f2f2;
+    
+}
+
+.container{
+    position: relative;
+}
+h1 {
+    color: rgb(126, 30, 204);
+}
+
+.Subtitulo {
+    color: white;
+    background: rgb(126, 30, 204);
+    padding: 5px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.contenedorPersonal {
+    background: rgba(72, 201, 240, 0.767);
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.contenedorVivienda {
+    background: rgba(72, 201, 240, 0.767);
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
